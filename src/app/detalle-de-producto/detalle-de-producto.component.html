@@ -1,0 +1,50 @@
+
+<button (click)="pasarPrimeraPantalla()">Volver</button>
+
+<div class="registration-form">
+  <h2>Registro de Usuario</h2>
+  <form>
+    <div class="form-group">
+      <label for="codigo">Código:</label>
+      <input type="number" id="codigo" name="codigo" required [(ngModel)]="document.data.codigo">
+    </div>
+    <div class="form-group">
+      <label for="coste">Coste:</label>
+      <input type="number" id="coste" name="coste" required [(ngModel)]="document.data.coste">
+    </div>
+    <div class="form-group">
+      <label for="impuesto">Impuesto:</label>
+      <input type="number" id="impuesto" name="impuesto" required [(ngModel)]="document.data.impuesto">
+    </div>
+    <div class="form-group">
+      <label for="marca">Marca:</label>
+      <input type="text" id="marca" name="marca" required [(ngModel)]="document.data.marca">
+    </div>
+    <div class="form-group">
+      <label for="margen">Margen:</label>
+      <input type="number" id="margen" name="margen" required [(ngModel)]="document.data.margen">
+    </div>
+    <div class="form-group">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre"required [(ngModel)]="document.data.nombre">
+    </div>
+    <div class="form-group">
+      <label for="precio">Precio:</label>
+      <input type="number" id="precio" name="precio" required [(ngModel)]="document.data.precio">
+    </div>
+    <div class="form-group">
+      <label for="proveedor">Proveedor:</label>
+      <input type="proveedor" id="proveedor" name="proveedor" required [(ngModel)]="document.data.proveedor">
+    </div>
+    <div class="form-group">
+      <label for="seccion">Sección:</label>
+      <input type="number" id="seccion" name="seccion" required [(ngModel)]="document.data.seccion">
+    </div>
+    <div class="form-group">
+      <label for="stock">Stock:</label>
+      <input type="number" id="stock" name="stock" required [(ngModel)]="document.data.stock">
+    </div>
+    <button (click)="clicBotonModificar()" type="submit">Actualizar</button>
+    <button (click)="clicBotonBorrar()">Eliminar</button>
+  </form>
+</div>

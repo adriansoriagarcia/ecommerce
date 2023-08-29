@@ -1,0 +1,24 @@
+<h1>Productos</h1>
+<button (click)="navegarAFormulario()" mat-button color="accent" mat-raised-button>Agregar producto</button><br><br>
+
+<div class="table-container">
+  <table class="styled-table">
+    <thead>
+      <tr>
+        <th>Código</th>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Proveedor</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let producto of arrayColeccionProductos" (click)="selecProducto(producto)">
+        <td>{{ producto.data.codigo }}</td>
+        <td>{{ producto.data.nombre }}</td>
+        <td>{{ producto.data.precio }}</td>
+        <td>{{ producto.data.proveedor }}</td>
+      </tr>
+      <!-- Agrega más filas aquí -->
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,80 @@
+<mat-card>
+    <h1>Agregar producto</h1>
+    <p>
+      <mat-form-field>
+        <input matInput [(ngModel)]="productoEditando.codigo"
+               type="number"
+               placeholder="Código">
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field>
+        <input matInput [(ngModel)]="productoEditando.coste"
+               type="number"
+               placeholder="Coste">
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field>
+        <input matInput [(ngModel)]="productoEditando.impuesto"
+               type="number"
+               placeholder="Impuesto">
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field>
+        <input matInput [(ngModel)]="productoEditando.marca"
+               type="text"
+               placeholder="Marca">
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field>
+        <input matInput [(ngModel)]="productoEditando.margen"
+               type="number"
+               placeholder="Margen">
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field>
+        <input matInput [(ngModel)]="productoEditando.nombre"
+               type="text"
+               placeholder="Nombre">
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field>
+        <input matInput [(ngModel)]="productoEditando.precio"
+               type="number"
+               placeholder="Precio">
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field>
+        <input matInput [(ngModel)]="productoEditando.proveedor"
+               type="text"
+               placeholder="Prooveedor">
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field>
+        <input matInput [(ngModel)]="productoEditando.seccion"
+               type="number"
+               placeholder="Seccion">
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field>
+        <input matInput [(ngModel)]="productoEditando.stock"
+               type="number"
+               placeholder="Stock">
+      </mat-form-field>
+    </p>
+    
+    <br>
+    <p>
+      <app-loading-button (click)="clicBotonInsertar()"  texto="Guardar" >Añadir</app-loading-button>
+      <a routerLink="/productos" mat-raised-button color="primary" style="margin-left: 10px">Volver</a>
+    </p>
+  </mat-card>
+  
